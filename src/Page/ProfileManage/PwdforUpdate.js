@@ -1,9 +1,9 @@
 import React, {useRef} from "react";
-import "../../Css/Main.css";
+import "../../style/Main.css";
 import {useNavigate} from "react-router-dom";
-import User from "../../Page/Users"
 
 function PwdforUpdate(props) {
+    const User = [{id: 1, name: "정도현", nickName: "DAVE", interest: "Frontend", birthDate: "2002-07-10", tellNum: "010-2637-4085", email: "20211503@daegin.ac.kr", passwd: "dv1234"}];
     let navigate = useNavigate()
     
     const pwdRef = useRef();

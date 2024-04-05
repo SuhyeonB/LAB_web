@@ -1,11 +1,12 @@
 import React from "react";
-import "../Css/Main.css";
+import "../style/Main.css";
 import defaultImg from '../images/pic01.jpg'
 import user from '../images/cat.jpg';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Members() {
-    const members = [['박동주', 'm02', defaultImg], ['정명주', 'm03', defaultImg], ['정도현', 'm04', user], ['최준영', 'm05', defaultImg], ['봉수현', 'm06', defaultImg], ['조민정', 'm07', defaultImg]]
+    
+    const members = [['박동주',2, defaultImg], ['정명주', 3, defaultImg], ['정도현', 4, user], ['최준영', 5, defaultImg], ['봉수현', 6, defaultImg], ['조민정', '7', defaultImg]]
 
     return(
         <div id="main" className="wrapper style">
@@ -47,7 +48,7 @@ function Members() {
                             {members.map(function(mem){
                                 return(
                                     <div className="col-4 col-12-medium mem" style={{textAlign:"center", marginBottom: "20px"}}>
-                                    <h4><Link to={"/profile"+mem[1]}>{mem[0]}</Link></h4>
+                                    <h4><Link to={"/profile/"+mem[1]}>{mem[0]}</Link></h4>
                                     <img alt={mem[1]} style={{borderRadius: "80%", objectFit: "cover", width: "200px"}} src={mem[2]}/>
                                 </div>
                                 )

@@ -1,10 +1,11 @@
 import React, {useState, useRef} from "react";
-import "../../Css/Main.css";
+import "../../style/Main.css";
 import ex from '../../images/ex.jpg';
 import {Link} from "react-router-dom";
-import User from "../../Page/Users"
 
 function ProfileUpdate() {
+    const User = [{id: 1, name: "정도현", nickName: "DAVE", interest: "Frontend", birthDate: "2002-07-10", tellNum: "010-2637-4085", email: "20211503@daegin.ac.kr", passwd: "dv1234"}];
+
     const [pwdMatched, setpwdMatched] = useState(false)
     const [fileImage, setFileImage] = useState(ex);
 

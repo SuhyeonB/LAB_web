@@ -1,0 +1,35 @@
+.signBox {
+    width: 45vw; height: 900px;
+    background: rgba(39, 40, 51, 1);
+    margin: auto;
+    margin-top: 10vh;
+}
+.loginBox {
+    width: 80%;
+    margin: auto;
+}
+.loginBox h3 {
+    padding-top: 2em;
+    text-align: center;
+}
+.loginBox input {
+    height: 3em;
+    margin: auto;
+    margin-top: 4%;
+
+}
+.loginBox button {
+    display: flex;
+    font-size: large;
+    width: 100%; height: 10%;
+    margin: auto;
+    margin-top: 4%;
+    justify-content: center;
+}
+.loginBox hr { 
+    margin: 2em auto;
+}
+.loginBox a {
+    display: flex;
+    justify-content: flex-end;
+}

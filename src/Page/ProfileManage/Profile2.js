@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../Css/Main.css";
+import "../../style/Main.css";
 import user from '../../images/cat.jpg';
 
 function Profile2() {
@@ -45,8 +45,9 @@ function Profile2() {
                 <h2 className="title">Participated</h2>
                 <hr/>
                 <div className="row">
-                    <div className="col-12 off-1-small" style={{border:"solid 1px"}}>
+                    <div className="col-12" style={{border:"solid 1px"}}>
                         <h4>웹페이지 제작</h4>
+                        
                     </div>
                 </div>
 

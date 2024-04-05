@@ -1,8 +1,7 @@
 import React, {useState} from "react";
-import "../../Css/Main.css";
+import "../../style/Main.css";
 import ex from '../../images/ex.jpg';
 import {Link} from "react-router-dom";
-import Scrape from "../Scrape";
 
 function Profile() {
     const [visible, setVisible] = useState(false);
@@ -15,7 +14,7 @@ function Profile() {
                 <hr/>
                 <div className="row" style={{paddingBottom: "7%"}}>
                     <div className="col-4 col-12-medium" style={{textAlign: 'center'}}>
-                        <img style={{borderRadius: "80%", objectFit: "cover", width: "300px", height: "300px"}} src={ex}/>
+                        <img style={{borderRadius: "80%", objectFit: "cover", width: "300px", height: "300px"}} src={ex} alt="ex"/>
                         <br/>
                         
                         <br/>
@@ -43,7 +42,7 @@ function Profile() {
                                 <p>&nbsp;{users[0].tellNum}</p>
                             </div>
                         </div>
-                        {visible && <Scrape/>}
+                        {/* 스크랩 기능 구현 이후 */}
                     </div>
                 </div>
 
